@@ -35,21 +35,6 @@ public class Opportunity {
     @Column(name = "Experience")
     private short Experience;
 
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
-    }
-
-    public short getExperience() {
-        return Experience;
-    }
-
-    public void setExperience(short experience) {
-        Experience = experience;
-    }
 
     public Opportunity() {
 
@@ -83,12 +68,29 @@ public class Opportunity {
         this.skills = skills;
     }
 
+    public short getExperience() {
+        return Experience;
+    }
+
+    public void setExperience(short experience) {
+        Experience = experience;
+    }
+
     public Date getPublishDate() {
         return publishDate;
     }
 
     public void setPublishDate(Date publishDate) {
         this.publishDate = publishDate;
+    }
+
+
+    public String getHiringManager() {
+        return HiringManager;
+    }
+
+    public void setHiringManager(String hiringManager) {
+        HiringManager = hiringManager;
     }
 
     public Date getJoiningDate() {
@@ -107,11 +109,12 @@ public class Opportunity {
         this.JoiningLocation = JoiningLocation;
     }
 
-    public String getHiringManager() {
-        return HiringManager;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setHiringManager(String hiringManager) {
-        HiringManager = hiringManager;
+    public void setDescription(String description) {
+        Description = description;
     }
+
 }
